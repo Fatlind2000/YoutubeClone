@@ -1,0 +1,691 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.header-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+}
+
+.main-header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 16px;
+}
+
+.main-header .btn {
+    border: none;
+    background: none;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.image-logo {
+    height: 22px;
+    margin-left: 10px;
+}
+
+.main-header form {
+
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.main-header .shown {
+    top: 10px;
+    transition: linear .5s;
+    background-color: rgb(71, 56, 56);
+    z-index: 10000;
+
+}
+
+.main-header form input {
+    height: 30px;
+    width: 330px;
+    border: none;
+    border-right: 3px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+.main-header form button {
+    margin-left: -6px;
+    height: 30px;
+    width: 50px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+}
+
+.header-section .main-header .elements-unit {
+
+    margin-right: 50px;
+}
+
+.main-header .elements-unit .btn {
+    margin: 0 15px 0 15px;
+}
+
+.main-header .elements-unit .personal-img {
+    height: 30px;
+    width: 50px;
+    margin-left: 15px;
+    padding-top: 20px;
+    border-radius: 100%;
+    background-color: rgb(64, 149, 206);
+}
+
+
+
+nav {
+    width: 300px;
+    top: 50px;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    background-color: rgb(211, 211, 211);
+    z-index: 11;
+}
+
+nav .btn {
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+}
+
+nav ul {
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 5px 0;
+    font-size: 20px;
+    padding: 4px;
+}
+
+.hidden {
+    margin-left: calc(300px - 100%);
+    display: none;
+   
+}
+.show{
+    transition: all .15s linear;
+}
+
+.Information {
+    width: 300px;
+    background-color: azure;
+    z-index: 999;
+    right: 40px;
+    top: 50px;
+    position: fixed;
+}
+
+.Information ul li .personal-img {
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+}
+
+.Information ul {
+    list-style: none;
+}
+
+.Information ul li h2 {
+    display: inline-block;
+    margin: 10px 10px;
+}
+
+.Information ul li h2 span {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.Information ul li button {
+    width: 100%;
+    height: 20px;
+    text-align: left;
+    border: none;
+    background: None;
+    margin: 3px;
+}
+
+.hide {
+    margin-left: calc(300px + 100%);
+    display: none;
+}
+
+.color-change {
+    background-color: rgb(37, 34, 34);
+}
+
+
+
+.personal-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+#btnn {
+    margin-left: 100px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.container .main-container {
+   
+    margin: 100px 0 100px 100px;
+}
+
+.container .main-container .container-one {
+  
+    margin: 0 30px;
+}
+
+.container .main-container .container-one div img {
+    height: 200px;
+    width: 90%;
+    margin: 10px;
+}
+
+.container .main-container .container-one div h4 {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.container .main-container .container-one p {
+    font-size: 16px;
+    height: 20px;
+}
+
+.container .main-container .container-one .account-information {
+   
+    display: flex;
+}
+
+.account-information-info {
+    display: flex;
+}
+
+.container .main-container .container-one .account-information .account-photo {
+    width: 50px;
+    height: 50px;
+}
+
+.container .main-container .container-one .account-information div {
+    margin-top: 20px;
+}
+
+.container .main-container .container-one .account-information button {
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 36px;
+    background-color: black;
+    color: white;
+}
+
+.container .main-container .container-one .account-information #subscribe {
+    margin: 20px;
+}
+
+.container .main-container .container-one .account-information #subscribe:hover {
+    background-color: rgb(49, 49, 49);
+}
+
+.container .main-container .container-one .account-information p {
+    width: 160px;
+}
+
+.container .main-container .container-one .account-information .btn-subscribe {
+    margin-left: 10px;
+    margin-top: -1px;
+    width: 100%;
+    position: relative;
+
+}
+
+.container .main-container .container-one .account-information .btn-subscribe #subscribe {
+    position: absolute;
+    right: 250px;
+}
+
+.container .main-container .container-one .account-information .btn-subscribe #video-likes {
+    position: absolute;
+    right: 150px;
+    top: 20px;
+}
+
+.container .main-container .container-one .account-information .btn-subscribe #video-dislikes {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.container .main-container .container-one .account-information .fa-solid {
+    height: 40px;
+    width: 100px;
+    margin: 10px 0;
+    color: white;
+}
+
+.container .side-container {
+    width: 500px;
+    margin-top: 100px;
+}
+
+.container .side-container .pictures-side {
+    
+    height: 150px;
+    width: 100%;
+    display: flex;
+}
+
+.container .side-container .pictures-side img {
+    
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+.container .side-container .pictures-side div {
+    margin: 10px;
+}
+
+.container .side-container .pictures-side div h4 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.container .side-container .pictures-side div p {
+    font-size: 16px;
+}
+
+.comment-section {
+    margin: 30px;
+}
+
+.comment-section form {
+    height: 60px;
+}
+
+.comment-section form input {
+    height: 25px;
+    width: 100%;
+    border-style: none;
+}
+
+.comment-section form .btn-hidden {
+    display: none;
+}
+
+.comment-section form .section-comment {
+
+    margin-top: 10px;
+}
+
+.comment-section form .section-comment {
+
+    position: relative;
+
+    margin-top: 10px;
+}
+
+.comment-section form .section-comment #btn-cancel {
+    height: 25px;
+    position: absolute;
+    right: 80px;
+}
+
+.comment-section form .section-comment #btn-comment {
+    height: 25px;
+    position: absolute;
+    right: 10px;
+}
+
+.comment-section form .btn-comment button {
+    height: 25px;
+}
+
+/*Phone*/
+@media only screen and (max-width: 600px) {
+    .header-section {
+        width: 100%;
+    }
+
+    .main-header {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .main-header form {
+        display: none;
+    }
+
+    nav {
+        width: 100%;
+        height: 100vh;
+    }
+
+    nav ul {
+        margin-left: 5px;
+    }
+
+    nav ul li {
+        font-size: 16px;
+    }
+
+    .header-section .main-header .elements-unit {
+        margin-right: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+    }
+
+    .main-header .elements-unit .btn-search-hidden {
+        visibility: visible;
+        height: 40px;
+        width: 40px;
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-left: -6px;
+        height: 30px;
+        width: 50px;
+        border-radius: 0 10px 10px 0;
+        border: none;
+        background: none;
+        font-size: 24px;
+    }
+
+    .main-header .elements-unit .btn {
+        display: none;
+    }
+
+    .main-header .elements-unit .personal-img {
+        height: 40px;
+        width: 40px;
+
+        border-radius: 100%;
+
+        background-color: rgb(64, 149, 206);
+    }
+
+
+    .Information {
+        width: 100%;
+        height: 100vh;
+        background-color: aquamarine;
+        z-index: 999;
+        right: 0;
+        top: 50px;      
+        position: fixed;
+    }
+
+    /*Header end*/
+
+    /*COntainer start*/
+    main .container {
+        display: block;
+        width: 100%;
+    }
+
+    /* main Container start*/
+    .container .main-container {
+        margin: 100px 0 0 0;
+        width: 100%;
+    }
+
+    .container .main-container .container-one {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .container .main-container .container-one div img {
+        height: 200px;
+        width: 100%;
+        margin: 0 0;
+    }
+
+    .container .main-container .container-one div h4 {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .container .main-container .container-one p {
+        font-size: 12px;
+        height: 20px;
+    }
+
+    main .container .main-container .container-one .account-information {
+        
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .container .main-container .container-one .account-information div {
+        margin-top: 0;
+    }
+
+
+    .container .main-container .container-one .account-information .account-photo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container .main-container .container-one .account-information button {
+        height: 20px;
+        width: 50px;
+        font-size: 8px;
+
+    }
+
+    .container .main-container .container-one .account-information #subscribe {
+        margin: 0;
+    }
+
+    .container .main-container .container-one .account-information p {
+        width: 160px;
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe {
+        margin-top: 0;
+        background-color: white;
+
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe #subscribe {
+        position: absolute;
+        right: 160px;
+        z-index: 1;
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe #video-likes {
+        position: absolute;
+        right: 100px;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe #video-dislikes {
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        z-index: 1;
+    }
+
+    .container .main-container .container-one .account-information .video-likes {
+        height: 20px;
+        width: 50px;
+    }
+
+    .container .main-container .container-one .account-information .fa-solid {
+        height: 10px;
+        width: 10px;
+        margin: 0 0;
+        color: white;
+    }
+
+    .comment-section {
+        margin: 30px;
+    }
+
+    .comment-section form {
+        height: 60px;
+    }
+
+    .comment-section form input {
+        height: 25px;
+        width: 100%;
+        border-style: none;
+        border-bottom: 1px solid black;
+    }
+
+    .comment-section form .btn-hidden {
+        display: none;
+    }
+
+    .comment-section form .section-comment {
+        margin-left: 10px;
+        margin-top: 10px;
+
+    }
+
+    .comment-section form .btn-comment button {
+        height: 25px;
+    }
+
+    /*Main container end */
+    /*
+  Side Container start*/
+    .container .side-container {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .container .side-container .pictures-side {
+      
+        height: 150px;
+        width: 100%;
+        display: flex;
+    }
+
+    .container .side-container .pictures-side img {
+       
+        height: 100px;
+        width: 100px;
+        margin: 10px;
+    }
+
+    .container .side-container .pictures-side div {
+        margin: 10px;
+    }
+
+    .container .side-container .pictures-side div h4 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .container .side-container .pictures-side div p {
+        font-size: 16px;
+    }
+
+    .comment-section {
+        margin: 30px;
+    }
+
+    .comment-section form {
+        height: 60px;
+    }
+
+    .comment-section form input {
+        height: 25px;
+        width: 100%;
+        border-style: none;
+        border-bottom: 1px solid black;
+    }
+
+
+
+}
+
+
+/*Tablet*/
+
+@media only screen and (min-width: 600px) and (max-width:1025px) {
+    .container .main-container {
+        margin: 100px 0 100px 0;
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe {
+        margin-left: 10px;
+        width: 100%;
+        position: relative;
+
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe #subscribe {
+        position: absolute;
+        right: 30px;
+
+        top: 5px;
+        margin: 0;
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe #video-likes {
+        position: absolute;
+        right: 80px;
+        top: 50px;
+        width: 50px;
+    }
+
+    .container .main-container .container-one .account-information .btn-subscribe #video-dislikes {
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        width: 50px;
+    }
+
+    .container .main-container .container-one .account-information .fa-solid {
+        height: 10px;
+        width: 10px;
+        margin: 10px 0;
+        color: white;
+    }
+
+    #btn-search-hidden {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1026px) {
+    #btn-search-hidden {
+        display: none;
+    }
+}
